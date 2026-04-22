@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Trayectoria' %} — Kevin Larguia{% endblock %}
+
+{% block content %}
+
+<section style="padding-top: 4rem;">
+    <div class="container">
+        <div class="reveal text-center" style="max-width: 700px; margin: 0 auto 3rem;">
+            <span class="section-label" style="justify-content: center;">{ journey }</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">{% trans 'Mi trayectoria' %}</h1>
+            <p class="section-subtitle" style="margin-left: auto; margin-right: auto; margin-bottom: 0;">
+                {% trans 'El camino recorrido entre bits, mates y gestión — desde lo académico hasta lo profesional.' %}
+            </p>
+        </div>
+
+        <!-- Leyenda de tipos -->
+        <div class="timeline-type-legend reveal">
+            <span class="legend-item">
+                <span class="swatch" style="background: var(--accent);"></span> {% trans 'trabajo' %}
+            </span>
+            <span class="legend-item">
+                <span class="swatch" style="background: var(--amber);"></span> {% trans 'educación' %}
+            </span>
+            <span class="legend-item">
+                <span class="swatch" style="background: var(--coral);"></span> {% trans 'proyecto' %}
+            </span>
+            <span class="legend-item">
+                <span class="swatch" style="background: #60a5fa;"></span> {% trans 'certificación' %}
+            </span>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            {% for exp in experiencias %}
+            <div class="timeline-entry reveal">
+                <div class="timeline-node {{ exp.tipo }}">
+                    {% if exp.tipo == 'educacion' %}
+                        <i class="bi bi-mortarboard-fill"></i>
+                    {% elif exp.tipo == 'proyecto' %}
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                    {% elif exp.tipo == 'certificacion' %}
+                        <i class="bi bi-patch-check-fill"></i>
+                    {% else %}
+                        <i class="bi bi-briefcase-fill"></i>
+                    {% endif %}
+                </div>
+
+                <div class="timeline-card">
+                    <span class="timeline-date">
+                        <i class="bi bi-calendar3"></i>
+                        {{ exp.fecha_inicio|date:"M Y" }}
+                        {% if exp.fecha_fin %}
+                            — {{ exp.fecha_fin|date:"M Y" }}
+                        {% else %}
+                            — {% trans 'Actualidad' %}
+                        {% endif %}
+                    </span>
+                    <h4>{{ exp.cargo_actual }}</h4>
+                    <div class="company">
+                        <i class="bi bi-building"></i> {{ exp.empresa_actual }}
+                    </div>
+                    <p class="description">{{ exp.descripcion_actual|linebreaksbr }}</p>
+                </div>
+            </div>
+            {% empty %}
+            <div class="empty-state">
+                <i class="bi bi-calendar-x"></i>
+                <h3>{% trans 'Todavía no hay experiencias cargadas' %}</h3>
+                <p>{% trans 'Volvé pronto — esta sección se actualiza seguido.' %}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

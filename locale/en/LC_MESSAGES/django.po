@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: portfolio 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# ---------- Base / navbar / footer ----------
+msgid "Kevin Larguia — Estudiante de Ingeniería Informática & Data Science. Portfolio de proyectos en Python, Django, Data Analytics y más."
+msgstr "Kevin Larguia — Computer Engineering & Data Science student. Portfolio of projects in Python, Django, Data Analytics and more."
+
+msgid "Kevin Larguia — Portfolio"
+msgstr "Kevin Larguia — Portfolio"
+
+msgid "Dev portfolio: proyectos, experiencia y contacto."
+msgstr "Dev portfolio: projects, experience and contact."
+
+msgid "Kevin Larguia | Portfolio"
+msgstr "Kevin Larguia | Portfolio"
+
+msgid "loading portfolio"
+msgstr "loading portfolio"
+
+msgid "inicio"
+msgstr "home"
+
+msgid "proyectos"
+msgstr "projects"
+
+msgid "trayectoria"
+msgstr "journey"
+
+msgid "contacto"
+msgstr "contact"
+
+msgid "built with Django + ♥"
+msgstr "built with Django + ♥"
+
+msgid "Volver arriba"
+msgstr "Back to top"
+
+# ---------- Home ----------
+msgid "Kevin Larguia | Portfolio Dev"
+msgstr "Kevin Larguia | Dev Portfolio"
+
+msgid "Disponible para nuevos proyectos"
+msgstr "Available for new projects"
+
+msgid "developer & data enthusiast"
+msgstr "developer & data enthusiast"
+
+msgid "Hola, soy Kevin"
+msgstr "Hi, I'm Kevin"
+
+msgid "construyo"
+msgstr "I build"
+
+msgid "Estudiante de Ingeniería Informática en la UNL cursando una Diplomatura en Data Science. Me apasiona transformar datos en decisiones y código en experiencias bien diseñadas."
+msgstr "Computer Engineering student at UNL currently taking a Data Science diploma. Passionate about turning data into decisions and code into well-designed experiences."
+
+msgid "Ver proyectos"
+msgstr "View projects"
+
+msgid "Contactame"
+msgstr "Contact me"
+
+msgid "about me"
+msgstr "about me"
+
+msgid "Ing. Informática + Data Science"
+msgstr "Computer Eng. + Data Science"
+
+msgid "ready to work"
+msgstr "ready to work"
+
+msgid "experiencias"
+msgstr "experiences"
+
+msgid "En el repositorio"
+msgstr "In the repository"
+
+msgid "Hitos profesionales"
+msgstr "Professional milestones"
+
+msgid "Herramientas & tecnologías"
+msgstr "Tools & technologies"
+
+msgid "cafés"
+msgstr "coffees"
+
+msgid "Sin medida conocida"
+msgstr "With no known limit"
+
+msgid "Con qué construyo"
+msgstr "What I build with"
+
+msgid "Herramientas que uso todos los días, ordenadas por contexto. Siempre hay algo nuevo para sumar."
+msgstr "Tools I use every day, organized by context. There's always something new to add."
+
+msgid "Backend & Lenguajes"
+msgstr "Backend & Languages"
+
+msgid "Datos & BI"
+msgstr "Data & BI"
+
+msgid "Herramientas"
+msgstr "Tools"
+
+msgid "Proyectos destacados"
+msgstr "Featured projects"
+
+msgid "Un pequeño sample de lo que vengo construyendo."
+msgstr "A small sample of what I've been building."
+
+msgid "Ver todos"
+msgstr "View all"
+
+msgid "destacado"
+msgstr "featured"
+
+msgid "Código"
+msgstr "Code"
+
+msgid "¿Construímos algo juntos?"
+msgstr "Let's build something together?"
+
+msgid "Siempre abierto a sumar a proyectos, colaborar con equipos o simplemente charlar sobre tech."
+msgstr "Always open to joining projects, collaborating with teams or just chatting about tech."
+
+msgid "Enviame un mensaje"
+msgstr "Send me a message"
+
+# ---------- Proyectos ----------
+msgid "Proyectos"
+msgstr "Projects"
+
+msgid "Todo lo que vengo construyendo — desde web apps full-stack hasta dashboards de BI. Filtrá por tecnología o buscá por palabra clave."
+msgstr "Everything I've been building — from full-stack web apps to BI dashboards. Filter by technology or search by keyword."
+
+msgid "$ grep -r &quot;Python&quot; ./proyectos"
+msgstr "$ grep -r &quot;Python&quot; ./projects"
+
+msgid "Buscar proyectos"
+msgstr "Search projects"
+
+msgid "todos"
+msgstr "all"
+
+msgid "%(counter)s resultado"
+msgid_plural "%(counter)s resultados"
+msgstr[0] "%(counter)s result"
+msgstr[1] "%(counter)s results"
+
+msgid "para"
+msgstr "for"
+
+msgid "en"
+msgstr "in"
+
+msgid "limpiar filtros"
+msgstr "clear filters"
+
+msgid "Sin resultados"
+msgstr "No results"
+
+msgid "No se encontraron proyectos con esos criterios."
+msgstr "No projects found matching those criteria."
+
+# ---------- Trayectoria ----------
+msgid "Trayectoria"
+msgstr "Journey"
+
+msgid "Mi trayectoria"
+msgstr "My journey"
+
+msgid "El camino recorrido entre bits, mates y gestión — desde lo académico hasta lo profesional."
+msgstr "The road traveled between bits, mates and management — from academics to professional life."
+
+msgid "trabajo"
+msgstr "work"
+
+msgid "educación"
+msgstr "education"
+
+msgid "proyecto"
+msgstr "project"
+
+msgid "certificación"
+msgstr "certification"
+
+msgid "Actualidad"
+msgstr "Present"
+
+msgid "Todavía no hay experiencias cargadas"
+msgstr "No experiences loaded yet"
+
+msgid "Volvé pronto — esta sección se actualiza seguido."
+msgstr "Come back soon — this section is updated often."
+
+# ---------- Contacto ----------
+msgid "Contacto"
+msgstr "Contact"
+
+msgid "Hablemos"
+msgstr "Let's talk"
+
+msgid "¿Tenés una propuesta, oportunidad laboral o simplemente querés saludar? Mandale nomás."
+msgstr "Got a proposal, a job opportunity or just want to say hi? Go ahead."
+
+msgid "Respondo habitualmente en menos de 24 horas. Podés escribirme por cualquiera de estos canales:"
+msgstr "I usually respond within 24 hours. You can reach me through any of these channels:"
+
+msgid "ubicación"
+msgstr "location"
+
+msgid "copiar"
+msgstr "copy"
+
+msgid "nombre"
+msgstr "name"
+
+msgid "Ej: Juan Pérez"
+msgstr "E.g. John Smith"
+
+msgid "nombre@ejemplo.com"
+msgstr "name@example.com"
+
+msgid "mensaje"
+msgstr "message"
+
+msgid "¿En qué puedo ayudarte?"
+msgstr "How can I help you?"
+
+msgid "Enviar mensaje"
+msgstr "Send message"
+
+# ---------- Flash messages ----------
+msgid "¡Gracias %(nombre)s! Tu mensaje fue enviado con éxito. Te responderé pronto."
+msgstr "Thanks %(nombre)s! Your message was sent successfully. I'll reply soon."
+
+msgid "Por favor, completá todos los campos."
+msgstr "Please fill in all fields."

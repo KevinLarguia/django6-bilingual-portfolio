@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Proyectos' %} — Kevin Larguia{% endblock %}
+
+{% block content %}
+
+<section style="padding-top: 4rem;">
+    <div class="container">
+        <div class="reveal">
+            <span class="section-label">{ portfolio }</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">{% trans 'Proyectos' %}</h1>
+            <p class="section-subtitle">
+                {% trans 'Todo lo que vengo construyendo — desde web apps full-stack hasta dashboards de BI. Filtrá por tecnología o buscá por palabra clave.' %}
+            </p>
+        </div>
+
+        <!-- Filtros -->
+        <form class="filters-bar reveal delay-1" method="GET" action="{% url 'proyectos' %}">
+            <div class="search-input">
+                <i class="bi bi-search icon"></i>
+                <input
+                    type="search"
+                    name="buscar"
+                    value="{{ termino_busqueda }}"
+                    placeholder="{% trans '$ grep -r &quot;Python&quot; ./proyectos' %}"
+                    aria-label="{% trans 'Buscar proyectos' %}">
+            </div>
+
+            <div class="tech-pills">
+                <a href="{% url 'proyectos' %}{% if termino_busqueda %}?buscar={{ termino_busqueda }}{% endif %}"
+                   class="tech-pill {% if not filtro_tech %}active{% endif %}">
+                    {% trans 'todos' %}
+                </a>
+                {% for tech in techs_unicas %}
+                <a href="?tech={{ tech|urlencode }}{% if termino_busqueda %}&buscar={{ termino_busqueda }}{% endif %}"
+                   class="tech-pill {% if filtro_tech == tech %}active{% endif %}">
+                    {{ tech }}
+                </a>
+                {% endfor %}
+            </div>
+
+            {% if filtro_tech %}<input type="hidden" name="tech" value="{{ filtro_tech }}">{% endif %}
+        </form>
+
+        <!-- Info de resultados -->
+        {% if termino_busqueda or filtro_tech %}
+        <div style="margin-bottom: 1.5rem; font-family: var(--font-mono); color: var(--text-muted); font-size: 0.85rem;" class="reveal">
+            <i class="bi bi-info-circle text-accent"></i>
+            {% blocktrans count counter=proyectos|length %}{{ counter }} resultado{% plural %}{{ counter }} resultados{% endblocktrans %}
+            {% if termino_busqueda %} {% trans 'para' %} <span class="text-accent">"{{ termino_busqueda }}"</span>{% endif %}
+            {% if filtro_tech %} {% trans 'en' %} <span class="text-accent">{{ filtro_tech }}</span>{% endif %}
+            —
+            <a href="{% url 'proyectos' %}" style="color: var(--accent); text-decoration: underline;">{% trans 'limpiar filtros' %}</a>
+        </div>
+        {% endif %}
+
+        <!-- Grid de proyectos -->
+        <div class="projects-grid">
+            {% for p in proyectos %}
+            <article class="project-card reveal {% cycle '' 'delay-1' 'delay-2' %}">
+                <div class="project-media">
+                    {% if p.imagen_url %}
+                        <img src="{{ p.imagen_url }}" alt="{{ p.titulo_actual }}" loading="lazy">
+                    {% else %}
+                        <div class="placeholder"><i class="bi bi-code-square"></i></div>
+                    {% endif %}
+                    {% if p.destacado %}
+                        <span class="featured-badge"><i class="bi bi-star-fill"></i> {% trans 'destacado' %}</span>
+                    {% endif %}
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">{{ p.titulo_actual }}</h3>
+                    <p class="project-description">{{ p.descripcion_actual }}</p>
+                    <div class="project-tech">
+                        {% for t in p.tecnologias_lista %}
+                            <span class="tag">{{ t }}</span>
+                        {% endfor %}
+                    </div>
+                    {% if p.enlace_github or p.enlace_demo %}
+                    <div class="project-actions">
+                        {% if p.enlace_github %}
+                        <a href="{{ p.enlace_github }}" target="_blank" rel="noopener" class="btn-dev ghost sm">
+                            <i class="bi bi-github"></i> {% trans 'Código' %}
+                        </a>
+                        {% endif %}
+                        {% if p.enlace_demo %}
+                        <a href="{{ p.enlace_demo }}" target="_blank" rel="noopener" class="btn-dev primary sm">
+                            <i class="bi bi-box-arrow-up-right"></i> Demo
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% empty %}
+            <div class="empty-state">
+                <i class="bi bi-folder-x"></i>
+                <h3>{% trans 'Sin resultados' %}</h3>
+                <p>{% trans 'No se encontraron proyectos con esos criterios.' %}</p>
+                <a href="{% url 'proyectos' %}" class="btn-dev ghost sm mt-3">
+                    <i class="bi bi-arrow-counterclockwise"></i> {% trans 'Ver todos' %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
