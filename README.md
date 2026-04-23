@@ -58,12 +58,6 @@ python compile_translations.py
 
 Este script es una implementación pura en Python del `msgfmt` de gettext, así que **no necesitás instalar gettext en tu sistema** (útil en Windows).
 
-## 🔐 Admin
-
-- URL: http://127.0.0.1:8000/admin
-- Usuario: `admin`
-- Contraseña: `admin`
-
 ## 📁 Estructura
 
 ```
