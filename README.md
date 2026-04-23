@@ -44,8 +44,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Abrí http://127.0.0.1:8000
-
 ## 🌐 Traducciones
 
 Las traducciones inglés ya vienen compiladas en `locale/en/LC_MESSAGES/django.mo`.
