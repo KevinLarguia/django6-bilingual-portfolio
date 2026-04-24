@@ -1,0 +1,121 @@
+[
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 1,
+  "fields": {
+    "titulo": "gomitas.sf - Gestión de Emprendimiento & Growth",
+    "titulo_en": "gomitas.sf — Entrepreneurship & Growth Management",
+    "descripcion": "Desarrollo de un ecosistema digital para el escalamiento de un emprendimiento local de candy stands. El proyecto incluye la automatización de la \"Bandeja de Entrada Unificada\" para atención al cliente, el diseño de tableros de control de stock y la ejecución de campañas de Meta Ads que permitieron el crecimiento orgánico y pago de la marca desde cero en Santa Fe Capital.",
+    "descripcion_en": "Built a digital ecosystem to scale a local candy-stand business. The project includes automation of a \"Unified Inbox\" for customer support, design of stock control dashboards and the execution of Meta Ads campaigns that drove both organic and paid growth of the brand from zero in Santa Fe City.",
+    "tecnologia": "Meta Ads, ManyChats, Google Spreadsheets",
+    "tecnologia_en": "Meta Ads, ManyChats, Google Spreadsheets",
+    "fecha_creacion": "2026-04-11T15:03:49.467Z",
+    "enlace_github": "https://www.instagram.com/gomitas.sf/",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/BQLz3XmB/logo-gomitas-sf.jpg",
+    "destacado": false
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 2,
+  "fields": {
+    "titulo": "Data Infrastructure & Business Intelligence",
+    "titulo_en": "Data Infrastructure & Business Intelligence",
+    "descripcion": "Transformación de la operativa informal de un negocio real a un sistema de BI profesional.\r\n• Ingeniería de Datos: Diseño de BD relacional en MySQL (15 tablas) con capas de auditoría y lógica de negocio.\r\n• Automatización: Implementación de Triggers, Stored Procedures y Funciones para control de stock, costos logísticos y cálculo de ROI.\r\n• Analytics: Creación de dashboards en Power BI para el monitoreo de KPIs de ventas, alcance geográfico en Santa Fe y eficiencia del staff.",
+    "descripcion_en": "Transformation of an informal business operation into a professional BI system.\n• Data Engineering: Design of a MySQL relational DB (15 tables) with audit and business-logic layers.\n• Automation: Triggers, Stored Procedures and Functions for stock control, logistic costs and ROI calculation.\n• Analytics: Power BI dashboards for monitoring sales KPIs, geographic reach in Santa Fe and staff efficiency.",
+    "tecnologia": "MySQL, Power BI, SQL Stored Procedures, ETL",
+    "tecnologia_en": "MySQL, Power BI, SQL Stored Procedures, ETL",
+    "fecha_creacion": "2026-04-11T15:18:25.010Z",
+    "enlace_github": "https://github.com/KevinLarguia/EntregaFinalSQL_LarguiaKevin",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/ncNhV9Zy/bd.png",
+    "destacado": true
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 3,
+  "fields": {
+    "titulo": "Diseño de Infraestructura de Redes de Fibra Óptica (FTTH)",
+    "titulo_en": "Fiber Optic Network Infrastructure Design (FTTH)",
+    "descripcion": "Diseño y planimetría detallada para la expansión de redes de fibra óptica en entornos urbanos de Santa Fe.\r\n• Ingeniería de Detalle: Desarrollo de planos técnicos precisos para el despliegue de cableado aéreo y subterráneo (FTTH).\r\n• Análisis de Factibilidad: Digitalización de relevamientos de campo y datos geoespaciales para optimizar el trazado de red y puntos de distribución.\r\n• Documentación: Generación de diagramas de empalme y carpetas técnicas listas para ejecución.",
+    "descripcion_en": "Detailed design and planimetry for fiber optic network rollouts in urban areas of Santa Fe.\n• Detailed Engineering: Precise technical plans for aerial and underground (FTTH) cabling deployment.\n• Feasibility Analysis: Digitization of field surveys and geospatial data to optimize network routes and distribution points.\n• Documentation: Splice diagrams and technical packages ready for execution.",
+    "tecnologia": "AutoCAD, Google Earth Pro, GIS (Sistemas de Inform",
+    "tecnologia_en": "AutoCAD, Google Earth Pro, GIS",
+    "fecha_creacion": "2026-04-11T15:29:27.022Z",
+    "enlace_github": "https://github.com/KevinLarguia/PlanosAcad",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/cCXTMN17/portada-acad.png",
+    "destacado": false
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 4,
+  "fields": {
+    "titulo": "Bienestar Digital & Salud Mental - Data Analytics",
+    "titulo_en": "Digital Well-being & Mental Health — Data Analytics",
+    "descripcion": "Análisis integral de la relación entre el consumo tecnológico y el bienestar psicológico sobre una muestra de 500 registros.\r\n• Arquitectura: Implementación de un modelo de esquema de estrella en Power BI para optimizar el procesamiento de datos.\r\n• Análisis: Evaluación del impacto de las horas de pantalla en variables críticas como niveles de estrés y calidad del sueño mediante indicadores DAX.\r\n• Visualización: Dashboard interactivo de 5 vistas con segmentación demográfica.",
+    "descripcion_en": "Comprehensive analysis of the relationship between technology consumption and psychological well-being over a 500-record sample.\n• Architecture: Star-schema data model in Power BI to optimize processing.\n• Analysis: Impact assessment of screen time on critical variables such as stress levels and sleep quality using DAX measures.\n• Visualization: Interactive 5-view dashboard with demographic segmentation.",
+    "tecnologia": "Power BI, DAX, Modelado de Datos (Star Schema), ET",
+    "tecnologia_en": "Power BI, DAX, Star Schema Data Modeling, ETL",
+    "fecha_creacion": "2026-04-11T15:40:23.925Z",
+    "enlace_github": "https://github.com/KevinLarguia/Proyecto-PowerBI-Tecnologia-y-Estres",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/KjHsLg5f/portada-dash.png",
+    "destacado": false
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 5,
+  "fields": {
+    "titulo": "Structural Engine Desktop",
+    "titulo_en": "Structural Engine Desktop",
+    "descripcion": "Software técnico para el dimensionamiento de secciones de hormigón armado sometidas a flexión simple.\r\n• Cálculo Estructural: Determinación automática del área de acero necesaria y verificación de cuantías mínimas según normativas vigentes.\r\n• Desarrollo: Implementación lógica en C++ bajo paradigma POO, garantizando precisión en el procesamiento de momentos flectores y materiales.\r\n• Interfaz Gráfica: GUI diseñada con wxFormBuilder (wxWidgets) en entorno Zinjai para una interacción técnica",
+    "descripcion_en": "Technical software for the sizing of reinforced-concrete sections subject to simple bending.\n• Structural Calculation: Automatic determination of required steel area and verification of minimum reinforcement ratios under current codes.\n• Development: OOP-based C++ logic ensuring precision in processing bending moments and material properties.\n• GUI: Interface designed with wxFormBuilder (wxWidgets) inside Zinjai for a technical user experience.",
+    "tecnologia": "C++, wxWidgets, wxFormBuilder, Zinjai IDE",
+    "tecnologia_en": "C++, wxWidgets, wxFormBuilder, Zinjai IDE",
+    "fecha_creacion": "2026-04-11T16:05:15.491Z",
+    "enlace_github": "https://github.com/KevinLarguia/Structural-Engine-Calculadora-de-Armaduras-para-Hormig-n-Armado",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/xCwhXmTV/portada-proyectvigas.png",
+    "destacado": true
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 6,
+  "fields": {
+    "titulo": "Full-Stack Portfolio: Sistema de Gestión de Contenido Dinámico",
+    "titulo_en": "Full-Stack Portfolio: Dynamic Content Management System",
+    "descripcion": "Desarrollo de una plataforma web integral para la centralización de marca personal y gestión de trayectoria profesional.\r\n• Arquitectura: Implementación de un backend robusto en Django utilizando el patrón Modelo-Vista-Template.\r\n• Dinamicidad: Sistema de gestión de contenido (CMS) personalizado mediante el panel administrativo para actualizaciones de proyectos y timeline en tiempo real.\r\n• Interactividad: Formulario de contacto con persistencia en base de datos y diseño responsive optimizado",
+    "descripcion_en": "Full web platform for centralizing personal branding and managing professional trajectory.\n• Architecture: Robust Django backend using the Model-View-Template pattern.\n• Dynamic Content: Custom CMS through the admin panel for real-time updates of projects and timeline.\n• Interactivity: Contact form with DB persistence and a responsive, optimized design.",
+    "tecnologia": "Python, Django, Bootstrap 5, SQLite, Arquitectura",
+    "tecnologia_en": "Python, Django, Bootstrap 5, SQLite, Architecture",
+    "fecha_creacion": "2026-04-11T17:01:06.025Z",
+    "enlace_github": "https://github.com/KevinLarguia/Portfolio-Profesional---Django-Web-App",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/SKtJfMWR/captura-pagina.png",
+    "destacado": true
+  }
+},
+{
+  "model": "app_portfolio.proyecto",
+  "pk": 7,
+  "fields": {
+    "titulo": "Elektra SRL — Plataforma de Datos",
+    "titulo_en": "Elektra SRL — Data Platform",
+    "descripcion": "Proyecto de transformación de datos para Elektra S.R.L. — 20 años de operación de una empresa de iluminación profesional argentina. De XLS legado a PostgreSQL normalizado: limpieza ETL, análisis de negocio, listas de precios automatizadas, generación de facturas y API REST. Construido con Python, pandas y SQL.",
+    "descripcion_en": "Data transformation project for Elektra S.R.L. — 20 years of operation of an Argentine professional lighting company. From legacy XLS to normalized PostgreSQL: ETL cleanup, business analysis, automated price lists, invoice generation and REST API. Built with Python, pandas and SQL.",
+    "tecnologia": "Python, pandas, SQL, PostgreSQL, ETL, API REST",
+    "tecnologia_en": "Python, pandas, SQL, PostgreSQL, ETL, REST API",
+    "fecha_creacion": "2026-04-24T13:07:32.318Z",
+    "enlace_github": "https://github.com/KevinLarguia/ELEKTRA-SRL-plataforma-de-datos",
+    "enlace_demo": null,
+    "imagen_url": "https://i.postimg.cc/SQV9mKvN/p-electra.png",
+    "destacado": true
+  }
+}
+]
