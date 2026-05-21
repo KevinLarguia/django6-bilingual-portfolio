@@ -58,7 +58,7 @@ python compile_translations.py
 
 Este script es una implementación pura en Python del `msgfmt` de gettext, así que **no necesitás instalar gettext en tu sistema** (útil en Windows).
 
-## 📁 Estructura
+## 📁 Estructura de la pagina
 
 ```
 portfolio/
